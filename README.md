@@ -1,39 +1,31 @@
 # XAI-Grad-CAM
-1D and 2D Grad-CAM effectively captured key features of the main sleep signals of REMs and sleep spindle. Notably, 1D Grad-CAM exhibited superior precision on accuracy and straightforwardness in visualization.
-
-
-## Dataset
-**DREAMS dataset**
-
-9 excerpts of 30 minutes in which REMs were annotated by an expert
-<img width="1908" height="591" alt="image" src="https://github.com/user-attachments/assets/acab5b11-8140-4e8c-95fe-5858e238e7e9" />
-
-
-## Algorithm workflow
-<img width="594" height="256" alt="image" src="https://github.com/user-attachments/assets/cc5263f7-5397-45c3-adf1-4f4dde0fd285" />
-
-
-## Methodology
-**Sliding window**
-<img width="1113" height="572" alt="image" src="https://github.com/user-attachments/assets/476e973c-236c-4d81-9ea0-1acbcdbcd4a9" />
-
-**Synthetic Minority Oversampling Technique (SMOTE)**
-<img width="1082" height="490" alt="image" src="https://github.com/user-attachments/assets/2498561d-86af-4487-9fd7-946cf849f63f" />
-
-**Wavelet Transform Coherence (WTC)**
-<img width="1918" height="527" alt="image" src="https://github.com/user-attachments/assets/9c66f3f7-b702-4bfc-bee7-75efe79fdd36" />
-
-** 2-Dimensional Convolution Neural Network (2D-CNN)**
-<img width="1490" height="627" alt="image" src="https://github.com/user-attachments/assets/0b8d463c-6a29-4256-9134-6d6a30952582" />
-
-**1-Dimensional Convolution Neural Network (1D-CNN)**
-<img width="608" height="353" alt="image" src="https://github.com/user-attachments/assets/ece4e7fc-2125-4790-83a4-652535f9b729" />
-
-**Gradient Class Activation Map (Grad-CAM)**
+## 系統簡介
+- 1D 和 2D Grad-CAM 有效捕捉了 REM 和睡眠主軸等主要睡眠訊號的關鍵特徵。
+- 值得一提的是，1D Grad-CAM 在準確性和視覺化直觀性方面表現出卓越的精度。
 <img width="605" height="424" alt="image" src="https://github.com/user-attachments/assets/c8c178f5-6384-417c-a476-16d95ec770f5" />
 
+- 1D/2D CNN model for REMs and sleep spindle
+<img width="1763" height="960" alt="image" src="https://github.com/user-attachments/assets/b7e916e9-92ec-4169-870a-3f49009e78ff" />
 
-## Results
+
+
+
+## 功能特色
+- 利用EOG對REMs睡眠訊號的發生作檢測
+- 利用EEG對sleep spindle睡眠訊號的發生作檢測
+- 透過1D/2D Grad-CAM可解釋性模型來呈現推論結果
+
+## 環境需求
+- Colab
+- Kaggle
+
+
+## 安裝與執行方式
+
+
+
+
+## 結果呈現
 **REMs detection and sleep spindle detection using 10fold-CV and LOSO-CV**
 <img width="975" height="310" alt="image" src="https://github.com/user-attachments/assets/24d37df9-bfd4-460e-a72c-6ae1ed3d4dd2" />
 
